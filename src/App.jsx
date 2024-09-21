@@ -26,6 +26,25 @@ export function App() {
     <div className="box">
       <h1 className="title">People table</h1>
 
+      <div className="block">
+        <div className="buttons has-addons">
+          <button type="button" className="button is-info">
+            all
+          </button>
+          <button type="button" className="button">
+            m
+          </button>
+          <button type="button" className="button">
+            f
+          </button>
+        </div>
+        <input type="search" />
+      </div>
+
+      <button type="button" className="button is-link is-outlined is-fullwidth">
+        Reset all filters
+      </button>
+
       <table className="table is-striped is-narrow">
         <caption>
           {selectedPeople.map(person => person.name).join(', ')}
